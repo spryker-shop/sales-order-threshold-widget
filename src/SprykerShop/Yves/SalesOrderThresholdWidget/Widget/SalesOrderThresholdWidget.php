@@ -25,17 +25,11 @@ class SalesOrderThresholdWidget extends AbstractWidget
         $this->addParameter('expenses', $this->filterSalesOrderThresholdExpenses($expenseTransfers));
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'SalesOrderThresholdWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@SalesOrderThresholdWidget/views/sales-order-threshold-cart-expenses/sales-order-threshold-cart-expenses.twig';
